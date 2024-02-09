@@ -79,11 +79,11 @@ st.markdown("<div style='padding: 10px'></div>", unsafe_allow_html=True)
 for cluster_num, cluster_products in enumerate(products_by_cluster):
     st.markdown("<div style='padding: 5px'></div>", unsafe_allow_html=True)
     current_cluster = cluster_num + 1
-    cluster_title = '<h3 style="color:darkgreen; font-weight:bold;">Cluster {}</h3>'.format(cluster_num + 1)
+    cluster_title = f'<h3 style="color:darkgreen; font-weight:bold;">Cluster {cluster_num + 1} - {len(cluster_products)} Products </h3>'
     st.markdown(cluster_title, unsafe_allow_html=True)
     
     for product in cluster_products:
-        image_url = str(product['image'])  
+        image_url = str(product['image']) 
         # Check if the image URL is valid
         if image_url.strip() and image_url.lower() != 'nan':  
             st.image(image_url.split(" | ")[0])
