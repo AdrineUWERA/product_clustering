@@ -1,4 +1,4 @@
-# Article Clustering
+# Nike's Products Clustering
 ## Description
 
 The Nike's products Clustering App is a web application that clusters Nike's products based on their product description similarity using machine learning algorithms. The app preprocesses the product description, applies a clustering algorithm, and displays the clustered Nike's products on the web page. It provides users with an organized view of Nike's products in same category, making it easier to navigate and explore different products in the category. 
